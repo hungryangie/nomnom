@@ -1,6 +1,5 @@
 Nomnom::Application.configure do
-  config.action_mailer.default_url_options = {:host => 'https://nomnom-angelica-hom.herokuapp.com/'}
-
+  # config.action_mailer.default_url_options = { :host => 'localhost:3030' }
   # config.action_mailer.delivery_method = :smtp
 
   # config.action_mailer.smtp_settings = {
@@ -12,6 +11,7 @@ Nomnom::Application.configure do
   #   user_name: ENV['GMAIL_ADDRESS'],
   #   password: ENV['GMAIL_PASSWORD']
   # }
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # In the development environment your application's code is reloaded on

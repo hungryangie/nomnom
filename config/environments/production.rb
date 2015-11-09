@@ -1,4 +1,5 @@
 Nomnom::Application.configure do
+
   ActionMailer::Base.smtp_settings = {
     :port           => ENV['MAILGUN_SMTP_PORT'],
     :address        => ENV['MAILGUN_SMTP_SERVER'],
@@ -8,7 +9,9 @@ Nomnom::Application.configure do
     :authentication => :plain,
   }
   ActionMailer::Base.delivery_method = :smtp
-  
+
+  config.action_mailer.default_url_options = { :host => 'nomnom-angelica-hom.herokuapp.com' }
+
   # Settings specified here will take precedence over those in config/application.rb.
 
   # Code is not reloaded between requests.
