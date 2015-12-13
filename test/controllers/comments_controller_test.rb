@@ -12,5 +12,7 @@ class CommentsControllerTest < ActionController::TestCase
     		:rating => '1_star',
     	}
     end
+
+    assert_redirected_to place_path(place)
   end
 end
